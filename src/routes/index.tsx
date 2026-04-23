@@ -25,12 +25,13 @@ const TYPEFORM = "https://form.typeform.com/to/kNyCLfgA";
 
 function Countdown() {
   const target = new Date("2026-06-12T13:00:00+02:00").getTime();
-  const [now, setNow] = useState(Date.now());
+  const [now, setNow] = useState<number | null>(null);
   useEffect(() => {
+    setNow(Date.now());
     const i = setInterval(() => setNow(Date.now()), 1000);
     return () => clearInterval(i);
   }, []);
-  const diff = Math.max(0, target - now);
+  const diff = now === null ? target - Date.parse("2026-04-23T00:00:00Z") : Math.max(0, target - now);
   const d = Math.floor(diff / 86400000);
   const h = Math.floor((diff / 3600000) % 24);
   const m = Math.floor((diff / 60000) % 60);
