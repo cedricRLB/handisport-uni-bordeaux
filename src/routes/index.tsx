@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
 import { Calendar, MapPin, Clock, Trophy, Users, Heart, ArrowRight, Waves } from "lucide-react";
 import heroImg from "@/assets/hero-surf.jpg";
-import thomasImg from "@/assets/thomas-portrait.jpg";
+import thomasImg from "@/assets/thomas-da-silva.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -152,9 +152,9 @@ function Hero() {
 
 function Speaker() {
   const stats = [
-    { v: "x3", l: "Champion du monde" },
-    { v: "15+", l: "Années de compétition" },
-    { v: "∞", l: "Inspiration" },
+    { v: "x4", l: "Champion du monde" },
+    { v: "x4", l: "Champion de France" },
+    { v: "x3", l: "Vice-champion du monde" },
   ];
   return (
     <section className="relative py-28 px-6 bg-ocean-grad">
