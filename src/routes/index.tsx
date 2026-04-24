@@ -274,7 +274,7 @@ function OtherSpeakers() {
   );
 }
 
-
+function Program() {
   const items = [
     { t: "13h00", title: "Accueil & ouverture", desc: "Mot de bienvenue de l'ISG Bordeaux" },
     { t: "13h20", title: "Conférence de Thomas Da Silva", desc: "Parcours, défis et état d'esprit d'un champion du monde" },
