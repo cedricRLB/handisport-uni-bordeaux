@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
-import { Calendar, MapPin, Clock, Trophy, Users, Heart, ArrowRight, Waves } from "lucide-react";
+import { Calendar, MapPin, Clock, Trophy, Users, Heart, ArrowRight, Waves, Medal } from "lucide-react";
 import heroImg from "@/assets/hero-surf.jpg";
 import thomasImg from "@/assets/thomas-da-silva.jpg";
 
@@ -210,6 +210,70 @@ function Speaker() {
   );
 }
 
+function OtherSpeakers() {
+  const speakers = [
+    {
+      name: "Pierre Laroque",
+      role: "Président & joueur (Top 5 FR) — Club de Boccia de Bordeaux",
+      extra: "Élu au comité Handisport Gironde",
+      initials: "PL",
+    },
+    {
+      name: "Adrien Vigouroux",
+      role: "Président & joueur (D2) — Bordeaux Foot-Fauteuil électrique",
+      extra: "Élu au comité Handisport Gironde",
+      initials: "AV",
+    },
+  ];
+  return (
+    <section className="py-28 px-6 border-t border-border/40">
+      <div className="mx-auto max-w-6xl">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <span className="text-xs uppercase tracking-widest text-primary font-semibold">Aux côtés de Thomas</span>
+          <h2 className="mt-3 font-display text-4xl sm:text-6xl font-bold">
+            Les autres <span className="text-gradient-sunset">intervenants</span>.
+          </h2>
+          <p className="mt-6 max-w-2xl mx-auto text-muted-foreground">
+            Des acteurs engagés du handisport en Gironde partageront leur expérience du terrain et leur vision d'un sport inclusif.
+          </p>
+        </motion.div>
+
+        <div className="grid md:grid-cols-2 gap-6">
+          {speakers.map((s, i) => (
+            <motion.div
+              key={s.name}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.12 }}
+              whileHover={{ y: -6 }}
+              className="glass rounded-2xl p-8 flex gap-5 items-start"
+            >
+              <div className="shrink-0 h-16 w-16 rounded-2xl bg-gradient-sunset flex items-center justify-center font-display font-bold text-xl text-primary-foreground shadow-glow">
+                {s.initials}
+              </div>
+              <div className="min-w-0">
+                <div className="flex items-center gap-2 text-primary">
+                  <Medal className="h-4 w-4" />
+                  <span className="text-xs uppercase tracking-widest font-semibold">Intervenant</span>
+                </div>
+                <h3 className="mt-2 font-display text-2xl font-bold">{s.name}</h3>
+                <p className="mt-2 text-muted-foreground leading-relaxed">{s.role}</p>
+                <p className="mt-1 text-sm text-accent">{s.extra}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Program() {
   const items = [
     { t: "13h00", title: "Accueil & ouverture", desc: "Mot de bienvenue de l'ISG Bordeaux" },
@@ -366,6 +430,7 @@ function Index() {
     <main>
       <Hero />
       <Speaker />
+      <OtherSpeakers />
       <Program />
       <Why />
       <Details />
