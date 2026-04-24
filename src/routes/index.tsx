@@ -419,7 +419,7 @@ function Footer() {
         Conférence Handisport · ISG Bordeaux
       </div>
       <p className="mt-3">12 juin · 13h00 · 178 Cr du Médoc, 33300 Bordeaux</p>
-      <p className="mt-2">© {new Date().getFullYear()} — Avec Thomas Da Silva, champion du monde de para surf.</p>
+      <p className="mt-2">© {new Date().getFullYear()} — Cédric Etavard, Thomas Liffredo, Eva Hamilcaro, Mutesi Seiler, Gaspard Brun.</p>
     </footer>
   );
 }
