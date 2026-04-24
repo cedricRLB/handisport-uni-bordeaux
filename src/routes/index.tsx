@@ -277,7 +277,7 @@ function OtherSpeakers() {
 function Program() {
   const items = [
     { t: "13h00", title: "Accueil", desc: "Mot de bienvenue de l'ISG Bordeaux" },
-    { t: "13h30", title: "Table ronde & quizz interactif", desc: "1h30 d'échanges avec Thomas Da Silva et les intervenants, ponctués d'un quizz interactif avec le public" },
+    { t: "13h30", title: "Table ronde & quizz interactif", desc: "1h30 d'échanges avec les intervenants, ponctués d'un quizz interactif avec le public" },
     { t: "15h00", title: "Pause", desc: "Un moment pour échanger autour d'un rafraîchissement" },
     { t: "15h30", title: "Activités en mise en situation", desc: "Ateliers d'agilité et de réflexes pour vivre le handisport de l'intérieur" },
   ];
