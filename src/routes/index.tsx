@@ -22,6 +22,7 @@ export const Route = createFileRoute("/")({
 });
 
 const TYPEFORM = "https://form.typeform.com/to/kNyCLfgA";
+const SUPPORT_URL = "https://www.helloasso.com/associations/comite-departemental-handisport-de-la-gironde/paiements/soutenir-le-mouvement-handisport-girondin";
 
 function Countdown() {
   const target = new Date("2026-06-12T13:00:00+02:00").getTime();
