@@ -149,6 +149,19 @@ function Hero() {
           <div className="mt-14 max-w-xl">
             <p className="mb-3 text-xs uppercase tracking-widest text-muted-foreground">L'événement commence dans</p>
             <Countdown />
+            <motion.a
+              href={SUPPORT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Soutenir le handisport girondin sur HelloAsso (nouvel onglet)"
+              whileHover={{ scale: 1.04 }}
+              whileTap={{ scale: 0.97 }}
+              className="mt-8 inline-flex items-center gap-3 rounded-full bg-accent px-7 py-4 text-base font-semibold text-accent-foreground shadow-glow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+            >
+              <Heart className="h-5 w-5" aria-hidden="true" />
+              <span>Soutenir le handisport girondin</span>
+              <ArrowRight className="h-5 w-5" aria-hidden="true" />
+            </motion.a>
           </div>
         </motion.div>
       </div>
