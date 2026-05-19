@@ -22,6 +22,7 @@ export const Route = createFileRoute("/")({
 });
 
 const TYPEFORM = "https://form.typeform.com/to/kNyCLfgA";
+const SUPPORT_URL = "https://www.helloasso.com/associations/comite-departemental-handisport-de-la-gironde/paiements/soutenir-le-mouvement-handisport-girondin";
 
 function Countdown() {
   const target = new Date("2026-06-12T13:00:00+02:00").getTime();
@@ -95,9 +96,22 @@ function Hero() {
           <Waves className="h-6 w-6 text-primary animate-wave" />
           <span>Handisport · Bordeaux</span>
         </div>
-        <a href="#inscription" className="hidden sm:inline-flex text-sm text-muted-foreground hover:text-foreground transition">
-          S'inscrire →
-        </a>
+        <div className="flex items-center gap-3">
+          <a
+            href={SUPPORT_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Soutenir le handisport girondin (ouvre HelloAsso dans un nouvel onglet)"
+            className="inline-flex items-center gap-2 rounded-full bg-accent px-4 py-2 text-sm font-semibold text-accent-foreground shadow-md hover:scale-105 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          >
+            <Heart className="h-4 w-4" aria-hidden="true" />
+            <span className="hidden sm:inline">Soutenir le handisport girondin</span>
+            <span className="sm:hidden">Soutenir</span>
+          </a>
+          <a href="#inscription" className="hidden sm:inline-flex text-sm text-muted-foreground hover:text-foreground transition">
+            S'inscrire →
+          </a>
+        </div>
       </nav>
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 pt-12 pb-24 sm:pt-20">
