@@ -187,7 +187,7 @@ function Speaker() {
             Champion du monde<br />de <span className="text-gradient-sunset">para surf</span>.
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            Thomas Da Silva est l'une des figures les plus marquantes du handisport français. Multiple champion du monde de para surf, il partagera son parcours, ses combats et sa vision d'un sport sans frontières.
+            Thomas Da Silva est l'une des figures les plus marquantes du para sport français. Multiple champion du monde de para surf, il partagera son parcours, ses combats et sa vision d'un sport sans frontières.
           </p>
           <div className="mt-10 grid grid-cols-3 gap-4">
             {stats.map((s, i) => (
