@@ -251,6 +251,12 @@ function OtherSpeakers() {
       extra: "Élu au comité Handisport Gironde",
       initials: "AV",
     },
+    {
+      name: "Suzanne Canny-Serres",
+      role: "Kinésithérapeute à l'IEM Talence",
+      extra: "Investie dans la pratique sportive chez les jeunes",
+      initials: "SC",
+    },
   ];
   return (
     <section className="py-28 px-6 border-t border-border/40">
