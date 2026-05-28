@@ -255,8 +255,8 @@ function OtherSpeakers() {
     },
     {
       name: "Suzanne Canny-Serres",
-      role: "Kinésithérapeute à l'IEM Talence",
-      extra: "Investie dans la pratique sportive chez les jeunes",
+      role: "Kinésithérapeute spécialisée en neurologie à l'IEM Talence",
+      extra: "Suit plusieurs patients en situation de handicap",
       initials: "SC",
     },
   ];
