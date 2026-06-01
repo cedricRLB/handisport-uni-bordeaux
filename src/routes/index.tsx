@@ -6,6 +6,7 @@ import heroImg from "@/assets/hero-surf.jpg";
 import thomasImg from "@/assets/thomas-da-silva.jpg";
 import isgLogo from "@/assets/isg-logo.jpg";
 import handisportLogo from "@/assets/handisport-gironde.png";
+import epitechLogo from "@/assets/epitech.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
