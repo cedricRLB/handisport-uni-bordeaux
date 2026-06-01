@@ -457,10 +457,18 @@ function Footer() {
       </div>
       <p className="mt-3">12 juin · 13h00 · 178 Cr du Médoc, 33300 Bordeaux</p>
       <div className="mt-6 flex items-center justify-center gap-8 flex-wrap">
-        <img src={isgLogo} alt="ISG International Business School" className="h-16 w-auto rounded-md" />
-        <img src={handisportLogo} alt="Handisport Comité Départemental Gironde" className="h-16 w-auto bg-white rounded-md p-2" />
-        <img src={epitechLogo.url} alt="Epitech" className="h-16 w-auto bg-white rounded-md p-2" />
-        <img src={connorsLogo.url} alt="Connor's Australian Sports Bar" className="h-16 w-auto bg-white rounded-md p-2" />
+        <a href="https://www.isg.fr/campus/ecole-commerce-bordeaux/" target="_blank" rel="noopener noreferrer">
+          <img src={isgLogo} alt="ISG International Business School" className="h-16 w-auto rounded-md" />
+        </a>
+        <a href="https://www.cdh33.org/" target="_blank" rel="noopener noreferrer">
+          <img src={handisportLogo} alt="Handisport Comité Départemental Gironde" className="h-16 w-auto bg-white rounded-md p-2" />
+        </a>
+        <a href="https://www.epitech.eu/ecole-informatique-bordeaux/" target="_blank" rel="noopener noreferrer">
+          <img src={epitechLogo.url} alt="Epitech" className="h-16 w-auto bg-white rounded-md p-2" />
+        </a>
+        <a href="https://www.instagram.com/connors.australiansportsbar/" target="_blank" rel="noopener noreferrer">
+          <img src={connorsLogo.url} alt="Connor's Australian Sports Bar" className="h-16 w-auto bg-white rounded-md p-2" />
+        </a>
       </div>
       <p className="mt-6">© {new Date().getFullYear()} — Cédric Etavard, Thomas Liffredo, Eva Hamilcaro, Mutesi Seiler, Gaspard Brun.</p>
     </footer>
