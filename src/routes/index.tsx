@@ -7,6 +7,7 @@ import thomasImg from "@/assets/thomas-da-silva.jpg";
 import isgLogo from "@/assets/isg-logo.jpg";
 import handisportLogo from "@/assets/handisport-gironde.png";
 import epitechLogo from "@/assets/epitech.png.asset.json";
+import connorsLogo from "@/assets/connors.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -459,6 +460,7 @@ function Footer() {
         <img src={isgLogo} alt="ISG International Business School" className="h-16 w-auto rounded-md" />
         <img src={handisportLogo} alt="Handisport Comité Départemental Gironde" className="h-16 w-auto bg-white rounded-md p-2" />
         <img src={epitechLogo.url} alt="Epitech" className="h-16 w-auto bg-white rounded-md p-2" />
+        <img src={connorsLogo.url} alt="Connor's Australian Sports Bar" className="h-16 w-auto bg-white rounded-md p-2" />
       </div>
       <p className="mt-6">© {new Date().getFullYear()} — Cédric Etavard, Thomas Liffredo, Eva Hamilcaro, Mutesi Seiler, Gaspard Brun.</p>
     </footer>
