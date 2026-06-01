@@ -464,7 +464,7 @@ function Footer() {
           <img src={handisportLogo} alt="Handisport Comité Départemental Gironde" className="h-16 w-auto bg-white rounded-md p-2" />
         </a>
         <a href="https://www.epitech.eu/ecole-informatique-bordeaux/" target="_blank" rel="noopener noreferrer">
-          <img src={epitechLogo.url} alt="Epitech" className="h-16 w-auto bg-white rounded-md p-2" />
+          <img src={epitechLogo.url} alt="Epitech" className="h-16 w-auto max-w-[100px] bg-white rounded-md p-2" />
         </a>
         <a href="https://www.instagram.com/connors.australiansportsbar/" target="_blank" rel="noopener noreferrer">
           <img src={connorsLogo.url} alt="Connor's Australian Sports Bar" className="h-16 w-auto bg-white rounded-md p-2" />
