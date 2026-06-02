@@ -8,6 +8,7 @@ import isgLogo from "@/assets/isg-logo.jpg";
 import handisportLogo from "@/assets/handisport-gironde.png";
 import epitechLogo from "@/assets/epitech.png.asset.json";
 import connorsLogo from "@/assets/connors.png.asset.json";
+import cafeJoyeuxLogo from "@/assets/cafe-joyeux.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -468,6 +469,9 @@ function Footer() {
         </a>
         <a href="https://www.instagram.com/connors.australiansportsbar/" target="_blank" rel="noopener noreferrer">
           <img src={connorsLogo.url} alt="Connor's Australian Sports Bar" className="h-16 w-auto bg-white rounded-md p-2" />
+        </a>
+        <a href="https://www.cafejoyeux.com/fr/content/43-cafe-restaurant-cafe-joyeux-a-bord-eau-village" target="_blank" rel="noopener noreferrer">
+          <img src={cafeJoyeuxLogo.url} alt="Café Joyeux" className="h-16 w-auto object-contain bg-white rounded-md p-2" />
         </a>
       </div>
       <p className="mt-6">© {new Date().getFullYear()} — Cédric Etavard, Thomas Liffredo, Eva Hamilcaro, Mutesi Seiler, Gaspard Brun.</p>
